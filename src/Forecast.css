@@ -1,0 +1,89 @@
+.Forecast {
+  padding: 30px 30px 7px 30px;
+  background-color: #c4e6f7;
+  border: 1px solid #7ab9e4;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mainIcon {
+  width: 100px;
+  padding-bottom: 25px;
+  padding-right: 5px;
+}
+.searchArea {
+  border-color: #7ab9e4;
+}
+
+.btn-outline-secondary {
+  border-color: #7ab9e4;
+  color: #1f5172;
+}
+
+.btn-outline-secondary:hover {
+  border-color: #7ab9e4;
+  background-color: #1f5172;
+}
+
+.Forecast h1 {
+  font-size: 34px;
+  line-height: 28px;
+  margin-top: 15px;
+  color: #1f5172;
+  font-weight: bold;
+}
+
+.actualTime {
+  padding-left: 0;
+}
+
+.Forecast li {
+  list-style: none;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+footer {
+  font-size: 10px;
+}
+
+.source {
+  text-decoration: none
+}
+
+.currentTemp {
+  font-size: 38px;
+}
+
+.units {
+  font-size: 15px;
+  position: relative;
+  top: -16px;
+  
+}
+
+.fahrenheit {
+text-decoration: none
+}
+
+.celc {
+text-decoration: none
+}
+
+.additionalInfo {
+  padding-top: 25px;
+}
+
+.nextDaysForecast ul{
+  padding-left: 0;
+  text-align: center;
+}
+
+.nextDayIcon {
+width: 50px;
+}
+
+.nextDayTempMin {
+  opacity: 0.7;
+}
