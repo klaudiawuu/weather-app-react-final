@@ -2,6 +2,7 @@ import React from "react";
 import CorrectDateFormat from "./CorrectDateFormat";
 import "./Forecast.css";
 import Units from "./Units";
+import WeatherIcon from "./WeatherIcon";
 
 export default function ShowWeather(props) {
   return (
@@ -15,12 +16,8 @@ export default function ShowWeather(props) {
       </ul>
       <div className="row">
         <div className="col-6">
-          <img
-            src={props.info.icon}
-            alt="Partly cloudy"
-            className="mainIcon float-left"
-          ></img>
-          <Units celcius={props.info.temperature} />
+            <WeatherIcon code={props.info.icon} alt={props.info.description} size={50}/>
+            <Units celcius={props.info.temperature} />
         </div>
         <div className="col-6 additionalInfo">
           <ul>

@@ -14,7 +14,7 @@ export default function Forecast(props) {
       city: response.data.name,
       day: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       temperature: response.data.main.temp,
       realFeel: response.data.main.feels_like,
       humidity: response.data.main.humidity,
@@ -62,7 +62,7 @@ export default function Forecast(props) {
           </div>
         </form>
         <ShowWeather info={weatherDetails} />
-        <NextDaysForecast coordinates={weatherDetails.coordinates} />
+        <NextDaysForecast coordinates={weatherDetails.coordinates}/>
         <footer>
           App created by Klaudia Wawrzynczyk. Please find the code source{" "}
           <a

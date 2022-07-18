@@ -1,6 +1,7 @@
 .Forecast {
   padding: 30px 30px 7px 30px;
   background-color: #c4e6f7;
+  opacity: 0.8;
   border: 1px solid #7ab9e4;
   border-radius: 8px;
   max-width: 600px;
@@ -8,10 +9,16 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .mainIcon {
-  width: 100px;
   padding-bottom: 25px;
-  padding-right: 5px;
+  padding-right: 20px;
 }
+
+.nextDaysIcon canvas {
+  width: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .searchArea {
   border-color: #7ab9e4;
 }
@@ -54,6 +61,7 @@ footer {
 
 .currentTemp {
   font-size: 38px;
+  padding-left: 5px;
 }
 
 .units {
@@ -78,6 +86,8 @@ text-decoration: none
 .nextDaysForecast ul{
   padding-left: 0;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px
 }
 
 .nextDayIcon {
