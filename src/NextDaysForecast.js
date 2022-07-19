@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Forecast.css";
 import Days from "./Days";
-
+import { cleanup } from "@testing-library/react";
 
 export default function NextDaysForecast(props) {
   let [ready, setReady] = useState(false);
   let [nextDaysData, setNextDaysData] = useState(null);
+
+  useEffect(() => {
+    setReady(false);
+  }, [props.coordinates]);
 
   function handleResponse(response) {
     setNextDaysData(response.data.daily);
